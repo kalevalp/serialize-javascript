@@ -116,7 +116,9 @@ module.exports = function serialize(obj, options) {
     function serializeFunc(fn) {
       var serializedFn = fn.toString();
       if (IS_NATIVE_CODE_REGEXP.test(serializedFn)) {
-          throw new TypeError('Serializing native function: ' + fn.name);
+          // Placeholder for native functions
+          return `${serializedFn}: ${fn.name}`;
+          // throw new TypeError('Serializing native function: ' + fn.name);
       }
 
       // pure functions, example: {key: function() {}}
