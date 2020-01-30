@@ -46,6 +46,8 @@ function deleteFunctions(obj){
 module.exports = function serialize(obj, options) {
     options || (options = {});
 
+    const seen = []
+
     // Backwards-compatibility for `space` as the second argument.
     if (typeof options === 'number' || typeof options === 'string') {
         options = {space: options};
@@ -61,6 +63,12 @@ module.exports = function serialize(obj, options) {
     // Returns placeholders for functions and regexps (identified by index)
     // which are later replaced by their string representation.
     function replacer(key, value) {
+
+        if (seen.includes(value)) {
+            return 'cyclic_reference';
+        } else {
+            seen.push(value);
+        }
 
         // For nested function
         if(options.ignoreFunction){

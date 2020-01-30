@@ -1,7 +1,7 @@
 {
-  "name": "serialize-javascript",
-  "version": "2.1.2",
-  "description": "Serialize JavaScript to a superset of JSON that includes regular expressions and functions.",
+  "name": "serialize-javascript-w-cycles",
+  "version": "1.0.0",
+  "description": "Experimental package, adding cycle support to serialize-javascript - serializing JavaScript to a superset of JSON that includes regular expressions and functions.",
   "main": "index.js",
   "scripts": {
     "benchmark": "node -v && node test/benchmark/serialize.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yahoo/serialize-javascript.git"
+    "url": "git+https://github.com/kalevalp/serialize-javascript.git"
   },
   "keywords": [
     "serialize",
@@ -18,12 +18,12 @@
     "js",
     "json"
   ],
-  "author": "Eric Ferraiuolo <edf@ericf.me>",
+  "author": "Kalev Alpernas <kalev.alp@gmail.com>",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/yahoo/serialize-javascript/issues"
+    "url": "https://github.com/kalevalp/serialize-javascript/issues"
   },
-  "homepage": "https://github.com/yahoo/serialize-javascript",
+  "homepage": "https://github.com/kalevalp/serialize-javascript",
   "devDependencies": {
     "benchmark": "^2.1.4",
     "chai": "^4.1.0",
