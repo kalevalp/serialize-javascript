@@ -1,6 +1,6 @@
 {
   "name": "serialize-javascript-w-cycles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Experimental package, adding cycle support to serialize-javascript - serializing JavaScript to a superset of JSON that includes regular expressions and functions.",
   "main": "index.js",
   "scripts": {
