@@ -1,5 +1,7 @@
-Serialize JavaScript
+Serialize JavaScript w/ Cycles
 ====================
+
+**Note**: This is an experimental clone of [serialize-javascript](https://github.com/yahoo/serialize-javascript), adding support for circular structures in the serialized objects.
 
 Serialize JavaScript to a _superset_ of JSON that includes regular expressions, dates and functions.
 
